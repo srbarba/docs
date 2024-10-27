@@ -1,0 +1,44 @@
+---
+title: Documentación de desarrollo de srbarba
+description: Documentación de desarrollo de srbarba.
+template: splash
+hero:
+  tagline: Este sitio es un espacio de documentación para organizar y compartir conocimiento, experiencias y aprendizajes en diversas áreas de interés.
+  image:
+    file: ../../../assets/illustration.svg
+  actions:
+    - text: Empecemos
+      link: /es/introduction/welcome/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components'
+
+## Tabla de contenidos
+
+<CardGrid stagger>
+  <Card title="Playbook" icon="open-book">
+    Cómo me gusta trabajar, mis herramientas, estándares y prácticas.
+
+    Consulta el [Playbook](/playbook/introduction).
+
+  </Card>
+  <Card title="Cookbook" icon="seti:notebook">
+    La memoria es corta, así que anoto mis recetas y trucos.
+
+    Consulta el [Cookbook](/cookbook/introduction).
+
+  </Card>
+  <Card title="Tutorials" icon="document">
+    Un tutorial dice más que mil palabras.
+
+    Consulta los [Tutoriales](/tutorials/introduction).
+
+  </Card>
+  <Card title="Labs" icon="puzzle">
+    Me gusta tener un lugar para experimentar, cometer errores y aprender.
+
+    Consulta los [Labs](/labs/introduction).
+
+  </Card>
+</CardGrid>

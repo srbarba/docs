@@ -21,21 +21,55 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [starlightHeadingBadges()],
-      title: 'Playbook',
+      title: 'srbarba/docs',
+      defaultLocale: 'root',
+      locales: {
+        root: {
+          label: 'English',
+          lang: 'es-GB',
+        },
+        es: {
+          label: 'Español',
+          lang: 'es-ES',
+        },
+      },
       social: {
         github: 'https://github.com/srbarba/playbook',
+        linkedin: 'https://www.linkedin.com/in/juanpbarba/',
+      },
+      editLink: {
+        baseUrl: 'https://github.com/srbarba/docs/edit/main',
       },
       sidebar: [
         {
-          label: 'Guides',
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', slug: 'guides/example' },
-          ],
+          label: '🔷 Introduction',
+          collapsed: true,
+          autogenerate: { directory: '0-introduction' },
         },
         {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
+          label: '🃏 Playbook',
+          collapsed: true,
+          autogenerate: { directory: '100-playbook' },
+        },
+        {
+          label: '🧑‍🍳 Cookbook',
+          collapsed: true,
+          autogenerate: { directory: '200-cookbook' },
+        },
+        {
+          label: '👣 Tutorials',
+          collapsed: true,
+          autogenerate: { directory: '300-tutorials' },
+        },
+        {
+          label: '🧪 Labs',
+          collapsed: true,
+          autogenerate: { directory: '400-labs' },
+        },
+        {
+          label: '🔗 Resources',
+          collapsed: true,
+          autogenerate: { directory: '500-resources' },
         },
       ],
     }),

@@ -3,12 +3,12 @@ title: Another dev docs
 description: Let's see how I work and other stuff.
 template: splash
 hero:
-  tagline: This is a live document.
-  # image:
-  #   file: ../../assets/houston.webp
+  tagline: This site is a documentation space to organize and share my knowledge, experiences, and learnings in various areas of interest.
+  image:
+    file: ../../assets/illustration.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Getting started
+      link: /introduction/welcome/
       icon: right-arrow
     # - text: Read the Starlight docs
     #   link: https://starlight.astro.build
@@ -18,19 +18,31 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components'
 
-## Next steps
+## Table of contents
 
 <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+  <Card title="Playbook" icon="open-book">
+    Look at how I like to work, my tools, standards, and practices.
+
+    Check out the [Playbook](/playbook/introduction).
+
   </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  <Card title="Cookbook" icon="seti:notebook">
+    Memory is short, so I write down my recipes and tricks.
+
+    Check out the [Cookbook](/cookbook/introduction).
+
   </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
+  <Card title="Tutorials" icon="document">
+    A tutorial says more than a thousand words.
+
+    Check out the [Tutorials](/tutorials/introduction).
+
   </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  <Card title="Labs" icon="puzzle">
+    I like to have a place to experiment, make mistakes, and learn.
+
+    Check out the [Labs](/labs/introduction).
+
   </Card>
 </CardGrid>
