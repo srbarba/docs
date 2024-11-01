@@ -2,6 +2,7 @@
 title: 👋 Welcome to srbarba/docs
 description: A space to organize and share my knowledge, experiences and learnings in different areas of interest.
 slug: introduction/welcome
+tableOfContents: false
 ---
 
 This site is a documentation space to organize and share my knowledge, experiences, and learnings in various areas of interest.
